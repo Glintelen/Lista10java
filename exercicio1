@@ -1,0 +1,28 @@
+enum Luz{
+    VERMELHO(1), AMBAR(2), VERDE(3);
+    private int numero;
+    
+    Luz (int n){
+        numero = n;
+    }
+    int getNumero(){
+        return numero;
+    }
+}
+class Palestra {
+    public static void main(String[] args) {
+        Luz a;
+        a=Luz.AMBAR;
+        switch (a){
+        case VERMELHO:
+        System.out.println("Resposta "+Luz.VERMELHO.getNumero()+" - Palestra indisponivel");
+        break;
+        case AMBAR:
+        System.out.println("Resposta "+Luz.AMBAR.getNumero()+" - Palestra sendo liberada");
+        break;
+        case VERDE:
+        System.out.println("Resposta "+Luz.VERDE.getNumero()+" - Palestra disponivel");
+        break;}
+       
+    }
+}
